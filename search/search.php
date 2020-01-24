@@ -35,21 +35,21 @@ function search($name,$value){
  			$middle= floor(($first + $last) / 2);
  			if($arr[$middle][1]==$value){
    				$found=true;
-    			$key=$middle+1;
+    				$key=$middle+1;
    				$result = " Найдено значение " . $arr[$middle][1] . " соответствующее ключу ".$key;
   			}
 
-  		    else if ($first >= $last){
-    			$result = "undef";
-    			break;
+  		        else if ($first >= $last){
+    				$result = "undef";
+    				break;
   			}
 
    			else if ($arr[$middle][1]>$value){
    				$last = $middle - 1;
    			}
 
-   		    else {
-     			 $first = $middle + 1;
+   		        else {
+     			 	$first = $middle + 1;
   		    }
    
 		}
