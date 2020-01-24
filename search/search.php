@@ -50,7 +50,7 @@ function search($name,$value){
 
    		        else {
      			 	$first = $middle + 1;
-  		    }
+  		        }
    
 		}
 	}
